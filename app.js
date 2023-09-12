@@ -7,6 +7,7 @@ formData.addEventListener("submit", (e) => {
   const value = e.target[0].value;
   const bornYear = parseInt(value.split("-")[0]);
   const sum = currentYear - bornYear;
-
-  ageOutput.textContent = `Age:${sum}`;
+  value === ""
+    ? (ageOutput.textContent = `Please enter date`)
+    : (ageOutput.textContent = `Age:${sum}`);
 });
