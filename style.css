@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 15%;
   background-color: white;
   width: 450px;
   height: 300px;
@@ -35,12 +35,17 @@ body {
   font-family: "Roboto";
 }
 .date__container button {
+  cursor: pointer;
   margin: 15px 0;
   border: none;
   width: 200px;
   height: 30px;
   background-color: deepskyblue;
   border-radius: 5px;
+  font-size: 1.4rem;
+}
+.date__container button:hover {
+  background-color: rgb(0, 98, 255);
 }
 .date__container h1 {
   font-size: 20px;
